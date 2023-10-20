@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.profilecard {
+    max-width: 370px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-radius: 24px;
+    padding: 25px;
+    position: relative;
+}
+.profilecard::before{
+    content: '';
+position: absolute;
+top: 0%;
+left: 0%;
+height: 36%;
+width: 100%;
+border-radius: 24px 24px 0 0;
+background-color: #4070f4;
+}
+.imge {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.imge .profileimge {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.textdate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+.textdate .name {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.textdate .job {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.button {
+
+    border: none;
+    border-radius: 24px;
+    margin-top: 25px;
+    background-color: #4070f4;
+    margin: 0% 10px;
+    padding: 8px 24px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button :hover {
+    background-color: #0e4bf1;
+}
+
+.all {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.all .date {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7;
+    color: #333;
+}
+
+.date i {
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.date :last-child {
+    border-right: none;
+}
+
+.media-button{
+display: flex;
+align-items: center;
+margin-top: 15px;
+}
+
+.media-button .link{
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-size: 18px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0% 8px;
+    background-color: #4070f4;
+    text-decoration: none;
+}
